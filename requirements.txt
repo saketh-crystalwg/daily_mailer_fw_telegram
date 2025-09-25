@@ -1,10 +1,2 @@
-pandas
-datetime
-requests
-requests.auth
-xmltodict
-psycopg2
-babel
-openpyxl
-sqlalchemy
-timedelta
+python-telegram-bot==20.7
+nest_asyncio==1.6.0
