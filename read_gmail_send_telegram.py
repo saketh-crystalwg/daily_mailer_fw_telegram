@@ -53,7 +53,7 @@ def download_fw_attachments():
     print(f"Found {len(email_ids)} FW emails")
 
     now = datetime.now(timezone.utc)  # make 'now' timezone-aware in UTC
-    time_threshold = now - timedelta(minutes=1440) #30
+    time_threshold = now - timedelta(minutes=60) #30
 
     for e_id in email_ids[-10:]:
         status, data = mail.fetch(e_id, "(RFC822)")
